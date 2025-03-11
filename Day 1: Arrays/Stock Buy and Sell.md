@@ -1,5 +1,3 @@
-Here's the problem statement presented in a professional README format with clear structure and styling for your DSA repository:  
-
 ---
 
 # 📈 Best Time to Buy and Sell Stock
@@ -62,5 +60,3 @@ To solve this problem efficiently:
 ✅ Return the maximum profit found.
 
 ---
-
-If you'd like me to add the code solution with detailed comments, let me know! 😊
