@@ -8,23 +8,15 @@ This repository is organized into different categories of DSA concepts, with eac
 - Explanation of the solution (if required)
 - Optimal approaches with time and space complexities
 
-## 📂 Folder Structure
-```
+## 📂 Repository Structure
 📦 DSA-Questions
- ┣ 📂 Arrays
- ┃ ┣ 📄 ReverseArray.java
- ┃ ┣ 📄 TwoSum.java
- ┃ ┗ 📄 README.md
- ┣ 📂 LinkedList
- ┃ ┣ 📄 SinglyLinkedList.java
- ┃ ┣ 📄 DoublyLinkedList.java
- ┃ ┗ 📄 README.md
- ┣ 📂 Stack
- ┃ ┣ 📄 StackImplementation.java
- ┃ ┣ 📄 NextGreaterElement.java
- ┃ ┗ 📄 README.md
- ┗ 📂 ... (More topics coming soon)
-```
+ ┣ 📂 Striver's SDE Sheet
+   ┣ 📂 Day 1 - Arrays
+   ┣ 📂 Day 2 - Arrays Part 2
+   ┣ 📂 Day 3 - Linked List
+   ┣ 📂 Day 4 - Recursion
+   ┣ 📂 Day 5 - Binary Trees
+   ┗ 📄 README.md
 
 ## 🚀 Topics Covered
 ✅ Arrays  
@@ -39,6 +31,10 @@ This repository is organized into different categories of DSA concepts, with eac
 ✅ Dynamic Programming  
 ✅ Greedy Algorithms  
 ✅ Divide and Conquer  
+
+## 🏁 Progress Tracking
+I will be solving problems from:
+- **Striver's SDE Sheet**
 
 ## 🛠️ Technologies Used
 - **Java** for coding solutions
