@@ -9,14 +9,19 @@ This repository is organized into different categories of DSA concepts, with eac
 - Optimal approaches with time and space complexities
 
 ## 📂 Repository Structure
+
 📦 DSA-Questions
- ┣ 📂 Striver's SDE Sheet
-   ┣ 📂 Day 1 - Arrays
-   ┣ 📂 Day 2 - Arrays Part 2
-   ┣ 📂 Day 3 - Linked List
-   ┣ 📂 Day 4 - Recursion
-   ┣ 📂 Day 5 - Binary Trees
-   ┗ 📄 README.md
+ ┣ Striver's SDE Sheet
+  ┣ 📂 Day 1: Arrays
+  ┣ 📂 Day 2: Arrays Part II
+  ┣ 📂 Day 3: Arrays Part III
+  ┣ 📂 Day 4: Arrays Part IV
+  ┣ 📂 Day 5: Linked List
+  ┣ 📂 Day 6: Linked List Part II
+  ┣ 📂 Day 7: Linked List and Arrays
+  ┗ 📂 ... (More topics coming soon)
+
+🚀 Topics Covered
 
 ## 🚀 Topics Covered
 ✅ Arrays  
