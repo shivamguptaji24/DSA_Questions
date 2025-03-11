@@ -8,20 +8,18 @@ This repository is organized into different categories of DSA concepts, with eac
 - Explanation of the solution (if required)
 - Optimal approaches with time and space complexities
 
-## 📂 Repository Structure
-
+## 📂 Folder Structure
+```
 📦 DSA-Questions
- ┣ Striver's SDE Sheet
-  ┣ 📂 Day 1: Arrays
-  ┣ 📂 Day 2: Arrays Part II
-  ┣ 📂 Day 3: Arrays Part III
-  ┣ 📂 Day 4: Arrays Part IV
-  ┣ 📂 Day 5: Linked List
-  ┣ 📂 Day 6: Linked List Part II
-  ┣ 📂 Day 7: Linked List and Arrays
-  ┗ 📂 ... (More topics coming soon)
-
-🚀 Topics Covered
+ ┣ 📂 Day 1: Arrays
+ ┣ 📂 Day 2: Arrays Part II
+ ┣ 📂 Day 3: Arrays Part III
+ ┣ 📂 Day 4: Arrays Part IV
+ ┣ 📂 Day 5: Linked List
+ ┣ 📂 Day 6: Linked List Part II
+ ┣ 📂 Day 7: Linked List and Arrays
+ ┗ 📂 ... (More topics coming soon)
+```
 
 ## 🚀 Topics Covered
 ✅ Arrays  
@@ -37,13 +35,9 @@ This repository is organized into different categories of DSA concepts, with eac
 ✅ Greedy Algorithms  
 ✅ Divide and Conquer  
 
-## 🏁 Progress Tracking
-I will be solving problems from:
-- **Striver's SDE Sheet**
-
 ## 🛠️ Technologies Used
 - **Java** for coding solutions
-- **IntelliJ IDEA** / **Visual Studio Code** / **GitHub Codespace** as IDEs
+- **GitHub Codespace** / **IntelliJ IDEA** / **Visual Studio Code**  as IDEs
 - **Git** and **GitHub** for version control
 
 ## 📖 How to Use
@@ -69,7 +63,7 @@ I will be solving problems from:
 Feel free to contribute by submitting pull requests for optimized solutions or additional problems. Let's learn together! 😎
 
 ## ⭐ Show Your Support
-If you found this repository helpful, please give it a **star** 🌟 and follow my progress on [GitHub](https://github.com/Shivam-Gupta).
+If you found this repository helpful, please give it a **star** 🌟 and follow my progress on [GitHub](https://github.com/shivamguptaji24).
 
 ## 📬 Contact Me
 - **LinkedIn**: [Shivam Gupta](https://www.linkedin.com/in/shivam-gupta-cse/)  
