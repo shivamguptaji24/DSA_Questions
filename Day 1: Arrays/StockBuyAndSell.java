@@ -1,3 +1,9 @@
+/*
+It can be solve by two approach :-
+    1. Optimal Approach
+    2. Brute Force Approach
+*/
+
 // Optimal Approach
 
 /*
