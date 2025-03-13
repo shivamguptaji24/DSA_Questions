@@ -1,5 +1,3 @@
-Here's the well-structured README format for the **Kadane's Algorithm** problem:  
-
 ---
 
 # 🔥 Kadane's Algorithm: Maximum Subarray Sum in an Array  
@@ -61,5 +59,3 @@ To efficiently solve this problem:
 ✅ Print the maximum subarray sum and the subarray itself.
 
 ---
-
-If you'd like me to provide the complete code with comments, let me know! 😊
