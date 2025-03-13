@@ -11,6 +11,9 @@ Approach:
 4. Update the minPrice if it is greater than the current element of the array
 5. Take the difference of the minPrice with the current element of the array and compare and maintain it in maxPro.
 6. Return the maxPro.
+
+Time complexity: O(n)
+Space Complexity: O(1)
 */
 
 class Solution {
@@ -38,6 +41,9 @@ Approach:
 2. Use another for loop of j from ‘i+1’ to n.
 3. If arr[j] > arr[i] , take the difference and compare  and store it in the maxPro variable.
 4. Return maxPro.
+
+Time complexity: O(n^2)
+Space Complexity: O(1)
 */
 
 class Solution {
