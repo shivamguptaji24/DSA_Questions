@@ -3,7 +3,7 @@ It can be solve by four approach :-
   1. Brute Force Approach
   2. Better Approach
   3. Optimal Approach
-  4. Follow-up
+  4. Follow-up Question
 */
 
 // Brute Force Approach
@@ -42,6 +42,53 @@ class Solution {
                 }
 
                 maxi = Math.max(maxi, sum);
+            }
+        }
+
+        return maxi;
+    }
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------*/
+
+// Better Approach
+
+/*
+Intuition: If we carefully observe, we can notice that to get the sum of the current subarray we just need to add the current element(i.e. arr[j]) to the sum of the previous subarray i.e. arr[i….j-1].
+
+Assume previous subarray = arr[i……j-1]
+current subarray = arr[i…..j]
+Sum of arr[i….j] = (sum of arr[i….j-1]) + arr[j]
+
+This is how we can remove the third loop and while moving j pointer, we can calculate the sum.
+
+Approach:
+The steps are as follows:
+
+1. First, we will run a loop(say i) that will select every possible starting index of the subarray. The possible starting indices can vary from index 0 to index n-1(n = array size).
+2. Inside the loop, we will run another loop(say j) that will signify the ending index as well as the current element of the subarray. For every subarray starting from index i, the possible ending index can vary from index i to n-1(n = size of the array).
+3. Inside loop j, we will add the current element to the sum of the previous subarray i.e. sum = sum + arr[j]. Among all the sums the maximum one will be the answer.
+
+Time Complexity: O(N2), where N = size of the array.
+Reason: We are using two nested loops, each running approximately N times.
+Space Complexity: O(1) as we are not using any extra space.
+*/
+
+class Solution {
+    public int maxSubArray(int[] nums) {
+        int n = nums.length;
+        int maxi = Integer.MIN_VALUE;
+      
+        for (int i = 0; i < n; i++) {
+            int sum = 0;
+            for (int j = i; j < n; j++) {
+                // current subarray = arr[i.....j]
+
+                //add the current element arr[j]
+                // to the sum i.e. sum of arr[i...j-1]
+                sum += arr[j];
+
+                maxi = Math.max(maxi, sum); // getting the maximum
             }
         }
 
@@ -92,8 +139,73 @@ class Solution {
                 sum = 0;
             }
         }
+
+        // To consider the sum of the empty subarray
+        // uncomment the following check:
+
+        //if (maxi < 0) maxi = 0;
+      
         return maxi;
     }
 }
 
 /*-------------------------------------------------------------------------------------------------------------------------*/
+
+// Follow Up Question
+
+/*
+There might be more than one subarray with the maximum sum. We need to print any of them.
+
+Intuition: Our approach is to store the starting index and the ending index of the subarray. Thus we can easily get the subarray afterward without actually storing the subarray elements.
+If we carefully observe our algorithm, we can notice that the subarray always starts at the particular index where the sum variable is equal to 0, and at the ending index, the sum always crosses the previous maximum sum(i.e. maxi).
+So, we will keep a track of the starting index inside the loop using a start variable.
+We will take two variables ansStart and ansEnd initialized with -1. And when the sum crosses the maximum sum, we will set ansStart to the start variable and ansEnd to the current index i.e. i.
+The rest of the approach will be the same as Kadane’s Algorithm.
+
+Time Complexity: O(N), where N = size of the array.
+Reason: We are using a single loop running N times.
+Space Complexity: O(1) as we are not using any extra space.
+*/
+
+class Solution {
+    public long maxSubArray(int[] nums) {
+        int n = nums.length;
+        long maxi = Long.MIN_VALUE; // maximum sum
+        long sum = 0;
+
+        int start = 0;
+        int ansStart = -1, ansEnd = -1;
+        for (int i = 0; i < n; i++) {
+
+            if (sum == 0) start = i; // starting index
+
+            sum += arr[i];
+
+            if (sum > maxi) {
+                maxi = sum;
+
+                ansStart = start;
+                ansEnd = i;
+            }
+
+            // If sum < 0: discard the sum calculated
+            if (sum < 0) {
+                sum = 0;
+            }
+        }
+
+        //printing the subarray:
+        System.out.print("The subarray is: [");
+        for (int i = ansStart; i <= ansEnd; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.print("]n");
+
+        // To consider the sum of the empty subarray
+        // uncomment the following check:
+
+        //if (maxi < 0) maxi = 0;
+
+        return maxi;
+    }
+}
