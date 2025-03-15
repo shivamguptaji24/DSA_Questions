@@ -26,7 +26,28 @@ Reason: We are using three nested loops, each running approximately N times.
 Space Complexity: O(1) as we are not using any extra space.
 */
 
+class Solution {
+    public int maxSubArray(int[] nums) {
+        int n = nums.length;
+        int maxi = Integer.MIN_VALUE;
+      
+        for (int i = 0; i < n; i++) {
+            for (int j = i; j < n; j++) {
+                // subarray = arr[i.....j]
+                int sum = 0;
 
+                //add all the elements of subarray:
+                for (int k = i; k <= j; k++) {
+                    sum += arr[k];
+                }
+
+                maxi = Math.max(maxi, sum);
+            }
+        }
+
+        return maxi;
+    }
+}
 
 /*-------------------------------------------------------------------------------------------------------------------------*/
 
