@@ -16,7 +16,7 @@ Approach:
 3. If arr[j] > arr[i] , take the difference and compare  and store it in the maxPro variable.
 4. Return maxPro.
 
-Time complexity: O(n^2)
+Time complexity: O(n^2) because it iterates two loops
 Space Complexity: O(1)
 */
 
