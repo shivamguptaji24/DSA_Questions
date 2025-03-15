@@ -2,7 +2,7 @@
 It can be solve by four approach :-
   1. Brute Force Approach
   2. Better Approach
-  3. Optimal Approach
+  3. Optimal Approach - Kadane Algorithm
   4. Follow-up Question
 */
 
