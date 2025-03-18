@@ -3,7 +3,7 @@
 # 🔺 Pascal's Triangle  
 
 ## 📝 Problem Statement  
-This problem has **3 variations**:  
+This problem has **3 variations :**  
 
 ### 📌 **Variation 1:**  
 Given row number `r` and column number `c`. **Print the element** at position `(r, c)` in Pascal’s Triangle.  
