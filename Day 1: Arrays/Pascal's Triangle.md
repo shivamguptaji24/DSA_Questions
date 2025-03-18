@@ -76,16 +76,20 @@ The output matrix has only **1 row** with the number **1**.
 
 ## 🚀 Solution Approach  
 ✅ **Variation 1:**  
-- Use the combination formula:  
+- Use the combination formula:
+```
 \[
 C(r-1, c-1) = \frac{(r-1)!}{(c-1)! \times ((r-c)!)}
 \]
+```
 
 ✅ **Variation 2:**  
 - For each element in the row:  
+```
 \[
 C(n-1, k)
 \]
+```
 
 ✅ **Variation 3:**  
 - Build the triangle row by row using combinations or iterative logic.  
